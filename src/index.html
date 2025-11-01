@@ -24,11 +24,22 @@
           <button class="button" type="submit">Search</button>
         </form>
 
+        <!-- Контейнер для картки -->
+        <ul class="gallery" id="gallery"></ul>
+
+        <!-- Кнопка для завантаження наступних сторінок -->
+
+        <div class="button-container">
+          <button class="js-load-more load-more-hidden" type="button">
+            Load more
+          </button>
+        </div>
+
         <!-- Лоадер -->
         <div class="loader-container"><span class="loader hidden"></span></div>
 
-        <!-- Контейнер для картки -->
-        <ul class="gallery" id="gallery"></ul>
+        <!-- Infinity scroll -->
+        <div class="js-guard"></div>
       </div>
     </main>
 

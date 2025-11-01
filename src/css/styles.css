@@ -16,3 +16,168 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.form {
+  margin-top: 36px;
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  min-width: 272px;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: solid 1px #808080;
+  border-radius: 4px;
+
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 4px;
+}
+
+.button {
+  min-width: 91px;
+  margin-left: 8px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4e75ff;
+
+  color: #ffffff;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 4px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  padding: 20px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border: solid 1px #808080;
+}
+
+.gallery-item a {
+  display: block;
+  height: 200px;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+}
+
+.stats-params {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px 4px;
+}
+
+.stats-item {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  color: #2e2f42;
+}
+
+.stats-number {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 2px;
+}
+
+.iziToast-wrapper {
+  max-width: 432px;
+  margin-top: 24px;
+  margin-right: 36px;
+  border-radius: 4px;
+  gap: 8px;
+  color: #fafafb;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.load-more-hidden {
+  display: none;
+}
+
+.js-load-more {
+  max-height: 125px;
+  margin-top: 32px;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  background-color: #4e75ff;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 4px;
+  color: #ffffff;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #000;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hidden {
+  display: none;
+}
